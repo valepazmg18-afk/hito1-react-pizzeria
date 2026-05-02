@@ -1,4 +1,4 @@
-import CardPizza from "./CardPizzaTEMP";
+import CardPizza from "./CardPizza";
 import { Row } from "react-bootstrap";
 import React from "react";
 
