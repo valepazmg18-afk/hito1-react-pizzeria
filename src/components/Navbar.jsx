@@ -1,7 +1,7 @@
 import { Navbar, Container, Nav } from "react-bootstrap";
 
 function NavbarComponent() {
-        const total = 25000;
+        const total = 43730;
         const token = false;
     return (
       <>

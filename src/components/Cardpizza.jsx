@@ -1,30 +1,46 @@
 import Card from "react-bootstrap/Card";
-import ListGroup from "react-bootstrap/ListGroup";
+import Button from "react-bootstrap/Button";
+import React from "react";
 
-function PizzaCard(props) {
+
+export default function CardPizza(props) {
   return (
-      <Card
-        style={{ width: "20rem", height: "500px", gap: "10px" }}
-        className="shadow"
-      >
+    
+    <Card
+        className="shadow display-flex flex-direction-column"
+        style={{ width: "20rem", height: "680px", gap: "10px" }}
+        
+    >
         <Card.Img
           variant="top"
           src={props.img}
-          style={{ height: "200px", objectFit: "cover" }}
+          style={{ height: "250px", width: "100%", objectFit: "cover",}}
         />
-        <Card.Body>
-          <Card.Title>{props.name}</Card.Title>
-          <Card.Text>{props.ingredients.join(", ")}</Card.Text>
-        </Card.Body>
-        <ListGroup className="list-group-flush">
-          <ListGroup.Item>${props.price.toLocaleString()}</ListGroup.Item>
-        </ListGroup>
-        <Card.Body>
-          <button className="btn btn-light">Ver más 👀</button>
-          <button className="btn btn-dark">Añadir 🛒</button>
-        </Card.Body>
-      </Card>
+        <Card.Body style= {{
+          display: "flex",
+          flexDirection: "column",
+          flexGrow: 1,
+          gap: "10px",
+          }}
+        >
+        <Card.Title style={{fontSize: "20px", fontWeight:"400",}}>{props.title}</Card.Title>
+        <Card.Text style={{flexGrow: 1, minHeight: "80px", color: "#555",}}>
+          {props.description}
+        </Card.Text>
+        <Card.Text style={{flexGrow: 1, fontSize: "16px", color: "#555",}}>
+          <ul>{props.ingredients.map((ingredient, indice) => (
+            <li key={indice} className="badge bg-dark text-white me-1" style={{fontSize: "12px",}}>
+              {ingredient}
+            </li>
+          ))}</ul>
+          </Card.Text>
+        
+        <Button variant="dark" style={{marginTop: "auto", width: "100%", fontWeight: "500",}}>
+          Comprar
+        </Button>
+      </Card.Body>
+      
+    </Card>
   );
 }
 
-export default PizzaCard;
