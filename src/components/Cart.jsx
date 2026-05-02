@@ -1,5 +1,5 @@
 import React from "react";
-import CardPizza from "./CardPizza";
+import CardPizza from "./temp";
 import { useState } from "react";
 
 export default function Cart() {
