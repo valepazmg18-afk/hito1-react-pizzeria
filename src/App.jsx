@@ -4,8 +4,9 @@ import Footer from './components/Footer';
 // import LoginForm from './components/LoginForm';
 // import RegisterPage from './components/RegisterPage';
 import Header from './components/Header';
-import Cart from './components/Cart';
+// import Cart from './components/Cart';
 import Navbar from './components/Navbar';
+import Pizza from './components/Pizza';
 
 function App() {
 
@@ -14,9 +15,10 @@ function App() {
       <Navbar />
       <Header />
       {/* <Home /> */}
-      <Cart />
+      {/* <Cart /> */}
       {/* <LoginForm /> */}
       {/* <RegisterPage /> */}
+      <Pizza />
       <Footer />
     </>
   )
