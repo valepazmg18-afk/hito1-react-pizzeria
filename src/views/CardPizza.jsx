@@ -1,11 +1,15 @@
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import React from "react";
+import { Link } from "react-router-dom";
+
 
 
 export default function CardPizza(props) {
+
   return (
     
+
     <Card
         className="shadow display-flex flex-direction-column"
         style={{ width: "20rem", height: "680px", gap: "10px" }}
@@ -34,10 +38,10 @@ export default function CardPizza(props) {
             </li>
           ))}</ul>
           </Card.Text>
-        
-        <Button variant="dark" style={{marginTop: "auto", width: "100%", fontWeight: "500",}}>
+            
+        <Link to={`/pizza/${pizza.id}`}>
           Comprar
-        </Button>
+        </Link>
       </Card.Body>
       
     </Card>

@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import NavbarComponent from "../components/Navbar";
+
 
 export default function RegisterPage() {
     const [email, setEmail] = useState("");
@@ -20,7 +22,9 @@ export default function RegisterPage() {
         setConfirmPassword('');
     }
     return (
-        <form className="loginForm bg-dark text-white" onSubmit={(evento) => handleSubmit(evento)}>
+        <>
+        <NavbarComponent />
+        <form className="loginForm m-5 d-flex flex-column align-items-center" style={{backgroundColor: "#ffa366", padding:"20px", borderRadius:"10px"}} onSubmit={(evento) => handleSubmit(evento)}>
             <h2 className="mt-3">Crear una Cuenta</h2>
             <label htmlFor="email">Ingrese su correo electrónico</label>
             <br />
@@ -34,8 +38,9 @@ export default function RegisterPage() {
             <br />
             <input type="password" className="rounded" placeholder="******" value={confirmPassword} onChange={(evento) => setConfirmPassword(evento.target.value)} />
             <br />
-            <button className="btn btn-light m-3" type="submit">Registrarse</button>
+            <button className="btn btn-dark m-3" type="submit">Registrarse</button>
 
         </form>
+        </>
     );
 }

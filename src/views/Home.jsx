@@ -1,8 +1,12 @@
-// import CardPizza from "./CardPizza";
 import { useEffect, useState } from "react";
 import { Row } from "react-bootstrap";
 import React from "react";
-import Pizza from "./Pizza";
+import CardPizza from "./CardPizza";
+import NavbarComponent from "../components/Navbar";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
+
 
 export default function Home() {
 
@@ -19,6 +23,9 @@ export default function Home() {
   }, []);
 
   return (
+    <> 
+    <NavbarComponent/>
+    <Header/>
     <div className="pizza-container my-5 py-5">
       <h2 className="text-center mb-4 shadow ">Nuestras Pizzas</h2>
         <div className="row">
@@ -26,7 +33,8 @@ export default function Home() {
             <div className="col-md-4 mb-4" key={pizza.id}>
               <div className="card h-100 shadow">
                 <img src={pizza.img} alt={pizza.name} className="card-img-top" style={{ height: "250px", objectFit: "cover",}}/>
-                <div className="card-body d-flex flex-column">
+                <div className="card-body d-fl
+                ex flex-column">
                 <h5 className="card-title" style={{fontSize: "20px", fontWeight:"400",}}>{pizza.name}</h5>
                 <p className="card-text" style={{ flexGrow: 1, minHeight: "80px", color: "#555", }}>
                     {pizza.desc}
@@ -35,13 +43,18 @@ export default function Home() {
                     <small className="text-muted">Ingredientes: {pizza.ingredients?.join(" , ")}</small>
                 </p>
                 <p>$ {pizza.price.toLocaleString("es-CL")}</p>
-                <button className="btn btn-dark">Comprar</button>
-            </div>
+                
+                <Link to={`/pizza/${pizza.id}`} >
+                  <button className="btn btn-dark">Comprar</button> 
+                </Link>
+              </div>
             </div>
             </div>
             ))}
         </div>
     </div>
+    <Footer/>
+    </>
   );
 }
 

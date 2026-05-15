@@ -1,6 +1,8 @@
 import React from "react";
 import CardPizza from "./CardPizza";
 import { useState } from "react";
+import NavbarComponent from "../components/Navbar";
+
 
 export default function Cart() {
   const [productos, setProductos] = useState([
@@ -76,6 +78,7 @@ export default function Cart() {
 
   return (
     <>
+    <NavbarComponent />
       <div className="container">
         <h1>Carrito de Compras</h1>
         <div className="row">

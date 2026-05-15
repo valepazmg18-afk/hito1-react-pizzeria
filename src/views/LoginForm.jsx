@@ -1,4 +1,8 @@
 import { useState } from 'react';
+import React from 'react';
+import { Nav, Navbar } from 'react-bootstrap';
+import NavbarComponent from '../components/Navbar';
+
 
 function LoginForm() {
     const [email, setEmail] = useState("");
@@ -20,8 +24,10 @@ function LoginForm() {
         setPassword('');
     }
     return (
-        <form className="LoginForm bg-dark text-white" action="" onSubmit={(evento) => handleSubmit(evento)}>
-            <h2 className="mt-3">Iniciar Sesión</h2>
+        <>
+        <NavbarComponent />
+        <form className="LoginForm m-5 d-flex flex-column align-items-center" style={{backgroundColor:"#e65c00", color:"white", padding:"20px", borderRadius:"10px"}} action="" onSubmit={(evento) => handleSubmit(evento)}>
+            <h2 className="mt-3">Mi cuenta</h2>
             
             <label htmlFor="email">Ingrese su correo electrónico</label>
             <br />
@@ -34,6 +40,8 @@ function LoginForm() {
             <button className="btn btn-light m-3" type="submit">Iniciar Sesión</button>
             
         </form>
+        </>
+        
     );
 }
 export default LoginForm;
