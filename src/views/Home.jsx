@@ -13,7 +13,7 @@ export default function Home() {
   const [pizza, setPizzas] = useState([]);
 
   const getPizza = async () => {
-    const res = await fetch('http://localhost:5000/api/pizzas');
+    const res = await fetch('https://hito-react-pizzeria.onrender.com/api/pizzas');
     const data = await res.json();
     setPizzas(data);
   };
