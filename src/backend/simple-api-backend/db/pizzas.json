@@ -1,0 +1,50 @@
+[
+  {
+    "desc": "La pizza napolitana, de masa tierna y delgada pero bordes altos, es la versión propia de la cocina napolitana de la pizza redonda. El término pizza napoletana, por su importancia histórica o regional, se emplea en algunas zonas como sinónimo de pizza tonda.",
+    "id": "p001",
+    "img": "https://cocina-casera.com/wp-content/uploads/2023/06/pizza-napolitana.jpeg",
+    "ingredients": ["mozzarella", "tomates", "jamón", "orégano"],
+    "name": "Pizza napolitana",
+    "price": 5950
+  },
+  {
+    "desc": "La pizza españolaes una preparación culinaria que consiste en un pan plano, habitualmente de forma circular, elaborado con harina de trigo, levadura, agua y sal (a veces aceite de oliva) que comúnmente se cubre con salsa de tomate, queso y otros muchos ingredientes, y que se hornea a alta temperatura, tradicionalmente en un horno de leña.",
+    "id": "p002",
+    "img": "https://tofuu.getjusto.com/orioneat-local/resized2/QyRsDfua3FTxx55HZ-2400-x.webp",
+    "ingredients": ["mozzarella", "tomates", "jamón", "choricillo"],
+    "name": "Pizza española",
+    "price": 7250
+  },
+  {
+    "desc": "La pizza Salame es una preparación culinaria que consiste en un pan plano, habitualmente de forma circular, elaborado con harina de trigo, levadura, agua y sal (a veces aceite de oliva) que comúnmente se cubre con salsa de tomate, queso y otros muchos ingredientes, y que se hornea a alta temperatura, tradicionalmente en un horno de leña.",
+    "id": "p003",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaAtmi7cGQhYL8xYXCvQhTEjAsgsNkdSU80g&s",
+    "ingredients": ["mozzarella", "tomates", "salame", "orégano"],
+    "name": "Pizza salame",
+    "price": 5990
+  },
+  {
+    "desc": "La pizza Cuatro Estacioneses una preparación culinaria que consiste en un pan plano, habitualmente de forma circular, elaborado con harina de trigo, levadura, agua y sal (a veces aceite de oliva) que comúnmente se cubre con salsa de tomate, queso y otros muchos ingredientes, y que se hornea a alta temperatura, tradicionalmente en un horno de leña.",
+    "id": "p004",
+    "img": "https://recetinas.com/wp-content/uploads/2022/11/Pizza-cuatro-estaciones.jpg",
+    "ingredients": ["mozzarella", "salame", "aceitunas", "champiñones"],
+    "name": "Pizza cuatro estaciones",
+    "price": 9590
+  },
+  {
+    "desc": "La pizza Bacon es una preparación culinaria que consiste en un pan plano, habitualmente de forma circular, elaborado con harina de trigo, levadura, agua y sal (a veces aceite de oliva) que comúnmente se cubre con salsa de tomate, queso y otros muchos ingredientes, y que se hornea a alta temperatura, tradicionalmente en un horno de leña.",
+    "id": "p005",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiRUJFff5cEhq2lzwNC0SCWpDgom72x6u7sQ&s",
+    "ingredients": ["mozzarella", "tomates cherry", "bacon", "orégano"],
+    "name": "bacon",
+    "price": 6450
+  },
+  {
+    "desc": "La pizza Pollo Picante es una preparación culinaria que consiste en un pan plano, habitualmente de forma circular, elaborado con harina de trigo, levadura, agua y sal (a veces aceite de oliva) que comúnmente se cubre con salsa de tomate, queso y otros muchos ingredientes, y que se hornea a alta temperatura, tradicionalmente en un horno de leña.",
+    "id": "p006",
+    "img": "https://i.blogs.es/a07c70/pollo_curry/650_1200.jpg",
+    "ingredients": ["mozzarella", "pimientos", "pollo grillé", "orégano"],
+    "name": "Pizza pollo picante",
+    "price": 8500
+  }
+]
